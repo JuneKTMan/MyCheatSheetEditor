@@ -1,0 +1,167 @@
+/*Login Background*/
+.loginBackground {
+  background-image: url("/img/cathryn-lavery-fMD_Cru6OTk-unsplash.jpg");
+}
+
+body{
+  min-height:100vh;
+  margin-top: auto;
+}
+
+footer{
+  margin-top: auto;
+  text-align: center;  
+  vertical-align: middle; 
+  position: fixed;
+   bottom: 0;
+   width: 100%; 
+}
+
+/*Font style*/
+.login_h1 {
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  margin-top: 32px;
+}
+
+.login_p{
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.login_label {
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.reg_h1{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.reg_p{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 28px;
+
+}
+
+.reg_label{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Bordered form */
+div.form
+{
+    display: block;
+    text-align: center;
+
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    /* border: 3px solid #f1f1f1; */
+    width: 430px;
+    height: 520px;
+    border-radius: 10px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #000203;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  }
+  
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 16px;
+    color: white;
+  }
+
+    /* Extra style for the register button (red) */
+    .regbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #36f49b;
+      border-radius: 16px;
+      color: rgba(1, 27, 53, 0.521);
+    }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
