@@ -11,16 +11,24 @@
 // // Connect to DB
 // $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-//Heroku database
-$cleardb_url = parse_url(getenv("mysql://be6e84249c1257:cdfe3ce6@us-cdbr-east-06.cleardb.net/heroku_bbc518307663e76?reconnect=true"));
-$cleardb_host = $cleardb_url["us-cdbr-east-06.cleardb.net"];
-$cleardb_username = $cleardb_url["be6e84249c1257"];
-$cleardb_password = $cleardb_url["cdfe3ce6"];
-$cleardb_db = substr($cleardb_url["heroku_bbc518307663"], 1);
+// //Heroku database
+// $cleardb_url = parse_url(getenv("mysql://be6e84249c1257:cdfe3ce6@us-cdbr-east-06.cleardb.net/heroku_bbc518307663e76?reconnect=true"));
+// $cleardb_host = $cleardb_url["us-cdbr-east-06.cleardb.net"];
+// $cleardb_username = $cleardb_url["be6e84249c1257"];
+// $cleardb_password = $cleardb_url["cdfe3ce6"];
+// $cleardb_db = substr($cleardb_url["heroku_bbc518307663"], 1);
 
-// Connect to DB
-$conn = mysqli_connect($cleardb_host, $cleardb_username, $cleardb_password, $cleardb_db) or die("database connection error");
+// // Connect to DB
+// $conn = mysqli_connect($cleardb_host, $cleardb_username, $cleardb_password, $cleardb_db) or die("database connection error");
 
+//Heroku remote database
+$cleandb_host = "us-cdbr-east-06.cleardb.net";
+$cleandb_user = "be6e84249c1257";
+$cleandb_pass = "cdfe3ce6";
+$cleandb_name = "heroku_bbc518307663";
+
+$conn = mysqli_connect($cleandb_host, $cleandb_user, $cleandb_pass, $cleandb_name) or
+    die("Cannot connect Database" . mysqli_connect_error());
 
 
 //orginal local database

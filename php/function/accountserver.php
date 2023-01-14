@@ -2,7 +2,7 @@
 session_start();
 
 
-echo "seem that the heroku database cannot connected";
+echo "seem that the heroku register database cannot connected";
 include('dbconnect.php');
 
 $username = "";
@@ -40,6 +40,7 @@ if (!isset($_POST['reg_user'])) {
         mysqli_query($conn, $query);
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "Login successfully";
-        header('Location: ../../write.php');
+        header('Location: write.php');
+        //header('Location: ../../write.php');
     }
 }
