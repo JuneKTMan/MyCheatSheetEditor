@@ -25,8 +25,8 @@ if (isset($row)) {
     $_SESSION["id"] = $row["id"];
     $_SESSION['logged'] = true;
     $_SESSION['username'] = $username;
-    header('Location: write.php');
-    // header('Location: ../../write.php');
+
+    header('Location: ../../write.php');
 } else {
     echo "Wrong username/password";
 }

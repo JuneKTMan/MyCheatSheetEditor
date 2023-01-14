@@ -18,7 +18,7 @@
 
                 $fun = !isset($_POST['fun']) ? "" : $_POST['fun'];
                 $language = !isset($_POST['language']) ? "" : $_POST['language'];
-                $cheat  = !isset($_POST['cheat ']) ? "" : $_POST['cheat'];
+                $cheat  = !isset($_POST['cheat']) ? "" : $_POST['cheat'];
 
 
                 if (isset($fun) && !empty($fun)) {
