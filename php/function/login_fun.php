@@ -4,7 +4,7 @@ session_start();
 
 define('LOG_FUN', dirname(__FILE__) . '/../');
 $baselogfun = __DIR__ . '/../';
-echo "C:\Users\junej\Documents\NSCC\INET2005_WepApp\INET2005_Project3_W0454918\W0454918JuneMan_INET2005_Project3\W0454918JuneMan-INET2005-Project3_update\MyCheatSheetEditor\php\function\login_fun.php";
+
 
 include('dbconnect.php');
 
