@@ -11,11 +11,11 @@
 // // Connect to DB
 // $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-
+//Heroku database
 $cleardb_host = $cleardb_url["us-cdbr-east-06.cleardb.net"];
 $cleardb_username = $cleardb_url["be6e84249c1257"];
 $cleardb_password = $cleardb_url["cdfe3ce6"];
-$cleardb_dbname = $cleardb_dbname["heroku_bbc518307663 "];
+$cleardb_dbname = $cleardb_dbname["heroku_bbc518307663"];
 
 // Connect to DB
 $conn = mysqli_connect($cleardb_host, $cleardb_username, $cleardb_password, $cleardb_dbname) or die("database connection error");
