@@ -1,7 +1,10 @@
 <?php
 session_start();
-include('dbconnect.php');
+
+
 echo "seem that the heroku database cannot connected";
+include('dbconnect.php');
+
 $username = "";
 $errors = array();
 
