@@ -1,5 +1,5 @@
 <div class="dashboard-content px-3 pt-4">
-    <?php include "header.php" ?>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">

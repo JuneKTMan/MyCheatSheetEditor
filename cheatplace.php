@@ -1,6 +1,6 @@
 <body>
     <div class="main-container d-flex">
-        <?php include "php/include/header.php" ?>
+        <?php include "php/include/header.php"; ?>
         <?php include "php/include/sidebar.php"; ?>
         <div class="content">
             <?php include "php/include/topbar.php"; ?>
@@ -42,8 +42,6 @@
 
                     ?>
 
-                    <?php include "header.php"; ?>
-
 
                     <?php
                     if (isset($alertMessage)) {
@@ -53,7 +51,7 @@
                     ?>
                     <h2 class="fs-5">My Cheat Book</h2>
 
-                    <?php include "php/function/searchbox.php" ?>
+                    <?php include "php/function/searchbox.php"; ?>
 
                     <br><br>
                     <form action="" method="POST">

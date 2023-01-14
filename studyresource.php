@@ -23,7 +23,7 @@
                             <h2 class="fs-5">My saved resources</h2>
                             <br>
 
-                            <?php echo $removeMessage ?>
+
                             <table class="table table-striped table-bordered">
                                 <tr>
                                     <th>ID</th>
@@ -107,7 +107,7 @@
 
                 if ($conn->query($query) === TRUE) {
                     $removeMessage = "Resources removed";
-                    echo "Resources removed";
+                    echo $removeMessage;
                 }
             }
 

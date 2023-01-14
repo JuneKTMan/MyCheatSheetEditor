@@ -5,12 +5,20 @@
             include('dbconnect.php');
 
             // extract($_POST);
+            $fun = $_POST['fun'] ?? '';
+            $language = $_POST['language'] ?? '';
+            $cheat = $_POST['cheat'] ?? '';
+
 
             if (!isset($_POST['submit'])) {
 
-                $fun = $_POST['fun'];
-                $language = $_POST['language'];
-                $cheat = $_POST['cheat'];
+                // $fun = $_POST['fun'];
+                // $language = $_POST['language'];
+                // $cheat = $_POST['cheat'];
+
+                $fun = !isset($_POST['fun']) ? "" : $_POST['fun'];
+                $language = !isset($_POST['language']) ? "" : $_POST['language'];
+                $cheat  = !isset($_POST['cheat ']) ? "" : $_POST['cheat'];
 
 
                 if (isset($fun) && !empty($fun)) {
@@ -27,9 +35,10 @@
                         // $submit_error = '<b class="text-danger text-center>Submittion error, please try again.</b>';
                     }
                 }
-            }
 
-            $conn->close();
+
+                $conn->close();
+            }
 
             //print_r($_POST);
             ?>
@@ -41,7 +50,7 @@
     <div class="container">
         <h2 class="fs-5">Write some cheats...</h2>
         <br><br>
-        <form action="" method="POST">
+        <form action="" method="post">
             <div class="form-group mb-3">
                 <label for="fun">Function</label>
                 <input type="text" name="fun" id="fun" class="form-control" required>

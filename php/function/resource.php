@@ -8,10 +8,16 @@
 
             if (!isset($_POST['submit'])) {
 
-                $resource = $_POST['resource'];
-                $language = $_POST['language'];
-                $about = $_POST['about'];
-                $url = $_POST['url'];
+                //$fun = !isset($_POST['fun']) ? "" : $_POST['fun'];
+                // $resource = $_POST['resource'];
+                // $language = $_POST['language'];
+                // $about = $_POST['about'];
+                // $url = $_POST['url'];
+
+                $resource = !isset($_POST['resource']) ? "" : $_POST['resource'];
+                $language = !isset($_POST['language']) ? "" : $_POST['language'];
+                $about = !isset($_POST['about']) ? "" : $_POST['about'];
+                $url = !isset($_POST['url']) ? "" : $_POST['url'];
 
 
                 if (isset($resource) && !empty($resource)) {
@@ -20,6 +26,7 @@
 
                     if (mysqli_query($conn, $insert_q)) {
                         $successMessage = "You have saved some new resources.";
+                        echo $successMessage;
 
             ?>
                         <!-- <h4>You have saved some new resources.</h4> -->
@@ -89,6 +96,6 @@
                 <button type="submit" class="btn btn-primary ">Save</button>
             </div>
         </form>
-        <?php echo $successMessage ?>
+
     </div>
 </div>
