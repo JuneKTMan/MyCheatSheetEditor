@@ -41,6 +41,6 @@ if (!isset($_POST['reg_user'])) {
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "Login successfully";
         header('Location: write.php');
-        //header('Location: ../../write.php');
+        // header('Location: ../../write.php');
     }
 }
