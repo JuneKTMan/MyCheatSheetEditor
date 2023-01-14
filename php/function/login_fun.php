@@ -4,7 +4,7 @@ session_start();
 
 define('LOG_FUN', dirname(__FILE__) . '/../');
 $baselogfun = __DIR__ . '/../';
-
+echo "seem that the heroku database cannot connected";
 
 include('dbconnect.php');
 
